@@ -17,7 +17,9 @@ mongoose.connect(MONGO_URL);
 app.use(cors({
   origin: [
     'http://localhost:3001',
+    'http://localhost:3000',
     'https://movies.feierabend.nomoredomainsicu.ru',
+    'https://movies.feierabend.nomoredomainsicu.ru/'
   ],
   credentials: true,
   maxAge: 30,
